@@ -1,0 +1,18 @@
+ 50 Set-Location -Path C:\...                                                 
+  51 New-Item -ItemType directory -Path C:\EvenFolder                          
+  52 New-Item -ItemType directory -Path C:\OddFolder                           
+  53 Move-Item -Path C:\FolderTest1\File2 -Destination OddFolder               
+  54 Move-Item -Path C:\EvenFolder -Destination OddFolder                      
+  55 Move-Item -Path C:\EvenFolder\File2 -Destination OddFolder                
+  56 Move-Item -Path C:\OddFolder\File2 -Destination EvenFolder                
+  57 Move-Item -Path C:\FolderTest1\File4 -Destination EvenFolder              
+  58 Move-Item -Path C:\FolderTest1\File1 -Destination OddFolder               
+  59 Move-Item -Path C:\FolderTest1\File3 -Destination OddFolder               
+  60 Move-Item -Path C:\FolderTest1\File5 -Destination OddFolder               
+  61 Move-Item -Path C:\FolderTest2\File6 -Destination EvenFolder              
+  62 Move-Item -Path C:\FolderTest2\File8 -Destination EvenFolder              
+  63 Move-Item -Path C:\FolderTest2\File10 -Destination EvenFolder             
+  64 Move-Item -Path C:\FolderTest2\File7 -Destination OddFolder               
+  65 Move-Item -Path C:\FolderTest2\File9 -Destination OddFolder               
+  66 Get-ChildItem -Path OddFolder                                             
+  67 Get-ChildItem -Path EvenFolder
